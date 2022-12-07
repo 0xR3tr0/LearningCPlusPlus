@@ -1,0 +1,1 @@
+Dati due valori ne calcola la media.
