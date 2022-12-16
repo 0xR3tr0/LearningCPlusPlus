@@ -1,0 +1,4 @@
+Un programma che riceve in ingresso le coordinate (x0, y0) di un punto P0 sul piano cartesiano.
+Successivamente riceve in ingresso un valore intero len che indica il numero di punti Pi (i = 1, ..., len).
+Al termine dell’input il programma fornisce le coordinate e la distanza del punto più vicino e di quello più lontano da P0. 
+Calcola infine il punto medio tra i due punti trovati e stampa le sue coordinate.
