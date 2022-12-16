@@ -54,11 +54,6 @@ void ricerca_min_max(double array[], int len, int& pos_min, int& pos_max){
 
 }
 
-
-
-
-
-
 void stampa(double array[], int len){
 
     for(int i = 0; i < len; i++){

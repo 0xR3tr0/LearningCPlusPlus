@@ -1,0 +1,1 @@
+Fornisce il valore minimo e il valore massimo in un array di double.
