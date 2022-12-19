@@ -1,0 +1,6 @@
+Scrivere un programma che calcoli l'area o il perimetro delle seguenti figure piane:
+
+-Quadrato
+-Triangolo
+-Rettangolo
+-Cerchio
