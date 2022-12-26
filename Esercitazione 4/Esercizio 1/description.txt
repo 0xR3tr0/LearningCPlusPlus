@@ -1,0 +1,3 @@
+Crea e riempie un array dal quale estrae i numeri pari e i numeri dispari
+inserendoli a loro volta in due array separati.
+Infine stampa i due array a video.
