@@ -18,11 +18,17 @@ int main(){
 
     stampa(myArray, len);
 
-    int cpari = ContEven(myArray, len);
+    int nEven = ContEven(myArray, len); // conta i numeri pari
 
-    VecEven(myArray, len, cpari);
+    int nOdd = ContOdd(myArray, len); // conta i numeri dispari
 
-    stampa(VecEven(myArray, len, cpari), cpari);
+    VecEven(myArray, len, nEven);
+
+    VecOdd(myArray, len, nOdd);
+
+    stampa(VecEven(myArray, len, nEven), nEven);
+    
+    stampa(VecOdd(myArray, len, nOdd), nOdd);
 
     return 0;
 
