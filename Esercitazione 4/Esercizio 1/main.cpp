@@ -22,13 +22,21 @@ int main(){
 
     int nOdd = ContOdd(myArray, len); // conta i numeri dispari
 
-    VecEven(myArray, len, nEven);
+    if(nEven > 0){
 
-    VecOdd(myArray, len, nOdd);
+        VecEven(myArray, len, nEven);
 
-    stampa(VecEven(myArray, len, nEven), nEven);
-    
-    stampa(VecOdd(myArray, len, nOdd), nOdd);
+        stampa(VecEven(myArray, len, nEven), nEven);
+
+    }else(cout << "Non vi sono numeri pari" << endl);
+
+    if(nOdd > 0){
+
+        VecOdd(myArray, len, nOdd);
+
+        stampa(VecOdd(myArray, len, nOdd), nOdd);
+
+    }else(cout << "Non vi sono numeri dispari" << endl);
 
     return 0;
 
