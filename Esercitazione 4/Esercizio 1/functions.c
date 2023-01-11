@@ -6,7 +6,6 @@ void stampa(int array[], int len){
 
     for(int i = 0; i < len; i++){
 
-        cout << "Inserisci i valori: " << endl;
         cout << array[i] << " ";
 
     }
@@ -21,6 +20,7 @@ void inserimento(int array[], int len){
 
     for(int i = 0; i < len; i++){
 
+        cout << "Inserisci i valori: ";
         cin >> array[i];
 
     }
@@ -52,8 +52,8 @@ int* VecEven(int array[], int len, int nEven){
     int* arrayEven = new int(nEven);
 
     int tmp = 0;
-    
-    for(int i = 0; i < len; i++){
+
+    for (int i = 0 ; i < len ; i++){
 
         if(array[i] % 2 == 0){
 
