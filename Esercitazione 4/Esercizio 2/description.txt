@@ -1,1 +1,3 @@
-To be done...
+Crea un array dinamico di numeri reali e lo riempie. 
+Letto l’array, e letto un ulteriore valore intero K, cerca i primi due elementi dell’array maggiori di K. 
+Al termine stampa il valore dei due elementi trovati o un opportuno messaggio in caso tali elementi non siano presenti nell’array.
