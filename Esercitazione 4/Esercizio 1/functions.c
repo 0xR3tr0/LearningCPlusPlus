@@ -6,6 +6,7 @@ void stampa(int array[], int len){
 
     for(int i = 0; i < len; i++){
 
+        cout << "Inserisci i valori: " << endl;
         cout << array[i] << " ";
 
     }

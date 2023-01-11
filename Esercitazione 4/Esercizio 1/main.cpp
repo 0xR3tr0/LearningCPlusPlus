@@ -12,8 +12,6 @@ int main(){
 
     int* myArray = new int(len);
 
-    cout << "Inserisci i valori: " << endl;
-
     inserimento(myArray, len);
 
     stampa(myArray, len);
