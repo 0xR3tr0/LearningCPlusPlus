@@ -1,2 +1,2 @@
 # University
- Esercizi svolti all'università
+ Esercitazioni svolte all'università
