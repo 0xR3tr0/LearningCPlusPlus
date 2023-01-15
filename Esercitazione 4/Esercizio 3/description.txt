@@ -1,0 +1,6 @@
+Siano assegnati in ingresso il numero di elementi e gli elementi di due array di interi vet1 e vet2. 
+programma che, letti gli array in accordo a quanto specificato, 
+calcoli la media degli elementi di vet1 e, 
+crei un nuovo array vet_out contenente gli elementi di vet2 maggiori o uguali della media ottenuta eliminandoli dall’array vet2. 
+Al termine stampa gli array così ottenuti. 
+Stampa un opportuno messaggio nel caso in cui in vet2 non ci siano elementimaggiori della media di vet1.
