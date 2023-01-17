@@ -1,5 +1,5 @@
 Si scriva un programma che definisca e utilizzi la struttura più adatta per gestire un elenco di studenti
-che si debbano iscrivere ad una seduta di laurea. Il generico elemento dell’elenco deve contenere le
+che si devono iscrivere ad una seduta di laurea. Il generico elemento dell’elenco deve contenere le
 seguenti informazioni:
 
 - nome dello studente
