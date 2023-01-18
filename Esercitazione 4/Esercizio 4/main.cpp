@@ -105,13 +105,33 @@ void numStudenti(Studente array[], int *n){
 
 }
 
-void chiediCorso(string *corso){
+int ricercaCorsoMedia(Studente array[], string tipoCorso, int nStud, int media){
 
-    int corsoTmp;
+    int contStud = 0;
+
+    for(int i = 0; i < nStud; i++){
+
+        if(tipoCorso == array[i].corso && array[i].media >= media){
+
+            contStud++;
+
+        }
+
+    }
+    
+    return contStud;
+
+}
+
+void ricerca(Studente array[], int nStud){
+
+    int corsoTmp, media;
+
+    string tipoCorso;
 
     do{
 
-        cout << "Quale corso si vuole visualizzare?" << endl;
+        cout << "Quale corso ti interessa?" << endl;
         cout << "1 - Informatica" << endl;
         cout << "2 - Industriale" << endl;
         cout << "3 - Civile" << endl;
@@ -124,20 +144,29 @@ void chiediCorso(string *corso){
 
         case 1:
 
-            *corso = "INF";
+            tipoCorso = "INF";
             break;
-            
+        
         case 2:
 
-            *corso = "IND";
+            tipoCorso = "IND";
             break;
 
         case 3:
 
-            *corso = "CIV";
+            tipoCorso = "CIV";
             break;
 
-        }
+    }
+
+    cout << "Inserisci la media minima di interesse: ";
+    cin >> media;
+
+    cout << "Ci sono " << ricercaCorsoMedia(array, tipoCorso, nStud, media) << " studenti nel corso di " << tipoCorso << " che hanno una media maggiore o uguale a " << media;
+
+    
+
+
 
     return;
 
@@ -150,5 +179,7 @@ int main(){
     Studente arrayStud[NMAX];
 
     numStudenti(arrayStud, &nStud);
+
+    ricerca(arrayStud, nStud);
 
 }
