@@ -1,0 +1,14 @@
+Si scriva un programma che definisca e utilizzi la struttura più adatta per gestire un elenco di voli, in
+cui il generico elemento deve contenere le seguenti informazioni:
+
+- città di partenza
+- città di arrivo
+- compagnia aerea
+- numero di passeggeri
+
+Il programma deve prevedere inizialmente la lettura dell’elenco con tutti i dati per un numero N di
+voli specificato dall’utente. Successivamente, il programma preveda la lettura di un nuovo volo V e
+cerchi nell’elenco originario tutti i voli aventi la stessa origine e la stessa destinazione, estraendoli
+dall’elenco originario ed inserendoli in un nuovo elenco, che andrà poi ordinato per numero di passeggeri crescente.
+Al termine, si inserisca nel nuovo elenco anche il volo V, facendo attenzione a non
+modificare l’ordinamento dell’elenco. Si stampi infine il nuovo elenco così ottenuto.
