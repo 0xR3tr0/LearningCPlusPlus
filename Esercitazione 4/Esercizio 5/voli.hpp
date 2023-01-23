@@ -5,15 +5,29 @@ using namespace std;
 
 const int NMAX = 100;
 
+struct Aeroporto{
+
+    string citta = " ";
+    string nome = " ";
+    string nazione = " ";
+
+};
+
 struct Voli{
 
-    string partenza = " ";
-    string arrivo = " ";
+    Aeroporto partenza;
+    Aeroporto arrivo;
     string compagnia = " ";
     int passeggeri = 0; 
 
 };
 
+void stampa(Voli array[], int n);
+
 void lettura(Voli array[], int &n);
 
-void nuovoVolo(Voli* p);
+void ricerca(Voli array1[], Voli array2[], int n, int &cont);
+
+void ordinamento(Voli array[], int cont);
+
+void nuovoVolo(Voli array[], int &cont);

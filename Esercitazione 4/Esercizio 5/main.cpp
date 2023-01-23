@@ -2,14 +2,23 @@
 
 int main(){
 
-    int n;
+    int n, cont = 0;
     Voli p;
 
     Voli arrayVoli[NMAX];
+    Voli newarrayVoli[NMAX];
 
     lettura(arrayVoli, n);
 
-    nuovoVolo(&p);
+    ricerca(arrayVoli, newarrayVoli, n, cont);
+
+    ordinamento(newarrayVoli, cont);
+    
+    stampa(newarrayVoli, cont);
+
+    nuovoVolo(newarrayVoli, cont);
+
+    stampa(newarrayVoli, cont);
 
     return 0;
 
