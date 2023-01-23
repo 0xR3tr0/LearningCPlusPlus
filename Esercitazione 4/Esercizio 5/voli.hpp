@@ -15,3 +15,5 @@ struct Voli{
 };
 
 void lettura(Voli array[], int &n);
+
+void nuovoVolo(Voli* p);

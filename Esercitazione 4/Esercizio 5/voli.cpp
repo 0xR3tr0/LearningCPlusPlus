@@ -19,25 +19,25 @@ void lettura(Voli array[], int &n){
         cout << "Numero di passeggeri: ";
         cin >> array[i].passeggeri;
 
-    }
+        cout << endl;
+        cout << "----------------------------------" << endl;
 
-    cout << endl;
-    cout << "----------------------------------" << endl;
+    }
 
     return;
 
 }
 
-void nuovoVolo(Voli array[], int &n){
+void nuovoVolo(Voli* p){
 
-    for(int i = 0; i < n; i++){
-    
-        cout << "Inserire la citta' di partenza: ";
-        cin >> array[i].partenza;
+    cout << "Inserire la citta' di partenza: ";
+    cin >> p -> partenza;
 
-        cout << "Inserire la citta' di arrivo";
-        cin >> array[i].arrivo;
+    cout << "Inserire la citta' di arrivo: ";
+    cin >> p -> arrivo;
 
-    }
+    if()
 
+
+    return;
 }
