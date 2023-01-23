@@ -80,56 +80,46 @@ void ricerca(Voli array1[], Voli array2[], int n, int &cont){
     int isFound = 0;
     int i;
 
-    do{
+    cont = 0;
 
-        cont = 0;
+    cout << "Inserire la citta' di partenza: ";
+    cin >> citta_partenza;
 
-        cout << "Inserire la citta' di partenza: ";
-        cin >> citta_partenza;
+    cout << "Inserire il nome dell'aeroporto di partenza: ";
+    cin >> nome_partenza;
 
-        cout << "Inserire il nome dell'aeroporto di partenza: ";
-        cin >> nome_partenza;
+    cout << "Inserire la nazione dell'areoporto di partenza: ";
+    cin >> nazione_partenza;
 
-        cout << "Inserire la nazione dell'areoporto di partenza: ";
-        cin >> nazione_partenza;
+    cout << "Inserire la citta' di arrivo: ";
+    cin >> citta_arrivo;
 
-        cout << "Inserire la citta' di arrivo: ";
-        cin >> citta_arrivo;
+    cout << "Inserire il nome dell'aeroporto di arrivo: ";
+    cin >> nome_arrivo;
 
-        cout << "Inserire il nome dell'aeroporto di arrivo: ";
-        cin >> nome_arrivo;
-
-        cout << "Inserire la nazione dell'aeroporto di arrivo: ";
-        cin >> nazione_arrivo;
+    cout << "Inserire la nazione dell'aeroporto di arrivo: ";
+    cin >> nazione_arrivo;
         
 
-        for(i = 0; i < n; i++){
+    for(i = 0; i < n; i++){
 
-            if(citta_partenza == array1[i].partenza.citta && 
-                nome_partenza == array1[i].partenza.nome && 
-                nazione_partenza == array1[i].partenza.nazione &&
-                citta_arrivo == array1[i].arrivo.citta &&
-                nome_arrivo == array1[i].arrivo.nome &&
-                nazione_arrivo == array1[i].arrivo.nazione
-                ){
+        if(citta_partenza == array1[i].partenza.citta && citta_arrivo == array1[i].arrivo.citta &&){
 
-                array2[cont].partenza.citta = array1[i].partenza.citta;
-                array2[cont].partenza.nome = array1[i].partenza.nome;
-                array2[cont].partenza.nazione = array1[i].partenza.nazione;
-                array2[cont].arrivo.citta = array1[i].arrivo.citta;
-                array2[cont].arrivo.nome = array1[i].arrivo.nome;
-                array2[cont].arrivo.nazione = array1[i].arrivo.nazione;
-                array2[cont].passeggeri = array1[i].passeggeri;
-                array2[cont].compagnia = array1[i].compagnia;
+            array2[cont].partenza.citta = array1[i].partenza.citta;
+            array2[cont].partenza.nome = array1[i].partenza.nome;
+            array2[cont].partenza.nazione = array1[i].partenza.nazione;
+            array2[cont].arrivo.citta = array1[i].arrivo.citta;
+            array2[cont].arrivo.nome = array1[i].arrivo.nome;
+            array2[cont].arrivo.nazione = array1[i].arrivo.nazione;
+            array2[cont].passeggeri = array1[i].passeggeri;
+            array2[cont].compagnia = array1[i].compagnia;
                 
-                isFound = 1;
-                cont++;
-
-            }
+            isFound = 1;
+            cont++;
 
         }
 
-    }while(isFound = 0);
+    }
 
     return;
 
