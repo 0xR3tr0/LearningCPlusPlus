@@ -1,0 +1,23 @@
+Si scriva un programma che utilizzi la struttura dati più adatta per gestire un elenco di ordini, in cui
+il generico elemento deve contenere le seguenti informazioni:
+
+- cognome del cliente
+- codice fiscale del cliente (codice alfanumerico a 16 caratteri)
+- tipo di cliente (“family”, “premium”, “aziendale”)
+- ammontare dell'ordine (numero reale, in migliaia di euro)
+
+Il programma inizialmente legge dall’elenco tutti i dati per un numero N di ordini specificato dall’utente e ordina l’elenco per codice fiscale crescente.
+
+Successivamente, il programma preveda la lettura di un valore intero K e ripeta K volte la sequenza di operazioni seguente:
+
+- si inserisca da tastiera una terna di valori (C,T,S), dove C è un codice fiscale, T è uno dei tipi previsti per il cliente e S è un numero reale;
+
+- si verifichi se l’elenco contiene un ordine in cui il codice fiscale è C (si supponga uno solo);
+
+- in caso positivo, si verifichi se il tipo del cliente individuato sia uguale a T e se l’ammontare dell’ordine sia maggiore di S;
+
+- in caso positivo, si copino tutte le informazioni dell’ordine individuato in un nuovo elenco e si elimini tale ordine dall’elenco originale;
+
+- non si operi alcuna modifica in caso contrario.
+
+Al termine, si individui l’ordine del nuovo elenco con l’ammontare minimo e si stampi a console tale valore insieme al nuovo elenco ottenuto.
