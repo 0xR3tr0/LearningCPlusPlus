@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include "functions.hpp"
 
 void stampa(int array[], int len){
 
@@ -106,7 +104,5 @@ int* VecOdd(int array[], int len, int nOdd){
     }
 
     return arrayOdd;
-
-
 
 }

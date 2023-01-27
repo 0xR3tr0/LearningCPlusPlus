@@ -1,5 +1,6 @@
-#ifndef functions
-#define funtions
+#include <iostream>
+
+using namespace std;
 
 float area_quadrato(float lato);
 
@@ -16,5 +17,3 @@ float perimetro_triangolo(float base, float altezza);
 float area_cerchio(float raggio);
 
 float circonferenza_cerchio(float raggio);
-
-#endif

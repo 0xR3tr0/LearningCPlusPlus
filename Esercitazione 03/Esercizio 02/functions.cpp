@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include "functions.hpp"
 
 double* crea_array(int& len){
 

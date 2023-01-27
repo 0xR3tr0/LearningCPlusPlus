@@ -1,7 +1,4 @@
-#include <iostream>
-#include "functions.h"
-
-using namespace std;
+#include "functions.hpp"
 
 int main(){
 

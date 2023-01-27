@@ -1,5 +1,6 @@
-#ifndef functions
-#define functions
+#include <iostream>
+
+using namespace std;
 
 void stampa(int array[], int len);
 
@@ -12,5 +13,3 @@ int* VecEven(int array[], int len, int nEven);
 int ContOdd(int array[], int len);
 
 int* VecOdd(int array[], int len, int nOdd);
-
-#endif
