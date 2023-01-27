@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include "functions.hpp"
 
 float area_quadrato(float lato){
 

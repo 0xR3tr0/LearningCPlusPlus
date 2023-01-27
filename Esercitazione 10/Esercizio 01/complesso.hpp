@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class complesso{
+class Complesso{
 
     float re;
     float im;
