@@ -1,2 +1,2 @@
-# University
- Esercitazioni svolte all'università
+# C++ Exercise
+Esercitazioni svolte all'università
