@@ -1,2 +1,2 @@
 # C++ Exercise
-Esercitazioni svolte all'università
+Esercizi in c++
