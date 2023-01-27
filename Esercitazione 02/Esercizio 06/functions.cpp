@@ -1,7 +1,4 @@
-#include <iostream>
-#include <cmath>
-
-using namespace std;
+#include "functions.hpp"
 
 void input_cooordinate(float myArrayX[], float myArrayY[], int len){
 

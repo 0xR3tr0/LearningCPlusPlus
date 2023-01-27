@@ -1,5 +1,4 @@
-#include <iostream>
-#include "functions.h"
+#include "functions.hpp"
 
 using namespace std;
 
@@ -26,7 +25,9 @@ int main(){
 
   distanza(myArrayX, myArrayY, len, x0, y0);
 
-  }
+  return 0;
+
+}
 
   
 
