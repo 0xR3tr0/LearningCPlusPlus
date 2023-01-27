@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include "functions.hpp"
 
 void stampa(int array[], int len){
 
