@@ -2,21 +2,21 @@
 
 int main(){
 
-    int n, k;
+  int n, k;
 
-    ordini arrayOrdini[NMAX];
-    ordini newarrayOrdini[NMAX];
+  ordini arrayOrdini[NMAX];
+  ordini newarrayOrdini[NMAX];
 
-    lettura(arrayOrdini, n);
+  lettura(arrayOrdini, n);
 
-    ordinamento(arrayOrdini, n);
+  ordinamento(arrayOrdini, n);
 
-    check(arrayOrdini, newarrayOrdini, k, n);
+  check(arrayOrdini, newarrayOrdini, k, n);
 
-    stampa(arrayOrdini, n);
+  stampa(arrayOrdini, n);
 
-    stampa(newarrayOrdini, k);
+  stampa(newarrayOrdini, k);
 
-    return 0;
+  return 0;
 
 }
