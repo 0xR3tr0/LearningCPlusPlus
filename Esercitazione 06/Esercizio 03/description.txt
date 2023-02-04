@@ -1,0 +1,2 @@
+Uguale all'esercizio 05 dell'esercitazione 04 ma
+con le liste.
