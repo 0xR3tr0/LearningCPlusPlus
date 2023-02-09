@@ -1,4 +1,1 @@
-Un programma che riceve in ingresso le coordinate (x0, y0) di un punto P0 sul piano cartesiano.
-Successivamente riceve in ingresso un valore intero "len".
-Il programma fornisce le coordinate e la distanza del punto più vicino e di quello più lontano da P0e 
-calcola infine il punto medio tra i due punti trovati e stampa le sue coordinate.
+Calcolo della distanza tra due punti (P, P0).

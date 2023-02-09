@@ -1,1 +1,0 @@
-Calcola l'area e la circonferenza di un cerchio.

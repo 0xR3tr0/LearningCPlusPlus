@@ -1,38 +1,14 @@
-#include <iostream>
-
-using namespace std;
+#include "functions.hpp"
 
 int main(){
-  
-  int x, cont = 1;
-  
-  cout << "Inserisci un numero: ";
-  cin >> x;
-  
-  if(x == 1 || x == 2 || x == 3){
-    
-    cout << "Il numero e' primo";
-    
-  }else{
-    
-    for(int i = 1; i <= x/2; i++){
-      
-      if(x%i==0){
-	
-	      cont++;
-	
-      }
-      
-    }
 
-    if(cont > 2){
+    int len, pos_min, pos_max;
 
-      cout << "Il numero non e' primo";
-      
-    }else{cout << "Il numero e' primo";}
-    
-  }
-  
-  return 0;
-  
+    double* myArray = crea_array(len);
+
+    ricerca_min_max(myArray, len, pos_min, pos_max);
+
+    cout << "Il valore minimo corrisponde a: " << myArray[pos_min] << " che si trova nella posizione: " << pos_min + 1 << endl;
+    cout << "Il valore massimo corrisponde a: " << myArray[pos_max] << " che si trova nella posizione: " << pos_max + 1;
+
 }

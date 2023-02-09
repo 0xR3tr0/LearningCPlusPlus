@@ -1,66 +1,68 @@
 #include "functions.hpp"
 
-double* crea_array(int& len){
+void input_cooordinate(float myArrayX[], float myArrayY[], int len){
 
-    cout << "Inserisci la lunghezza: ";
-    cin >> len;
+for(int i = 0; i < len; i++){
 
-    double* myArray = new double[len];
+      cout << "Inserisci la x: ";
+      cin >> myArrayX[i];
 
-    for(int i = 0; i < len; i++){
-
-        cout << "Inserisci i valori nell'Array:";
-        cin >> myArray[i];
+      cout << "Inserisci la y: ";
+      cin >> myArrayY[i];
 
     }
 
-    return myArray;
-
 }
 
-void ricerca_min_max(double array[], int len, int& pos_min, int& pos_max){
+void stampa_array(float myArrayX[], float myArrayY[], int len){
 
-    int min, max;
+	for(int i = 0; i < len; i++){
 
-    min = array[0];
-    max = array[0];
-
-    pos_min = 0;
-    pos_max = 0;
-
-    for(int i = 1; i < len; i++){
-
-        if(max < array[i]){
-
-            max = array[i];
-
-            pos_max = i;
-
-        }
-
-        if(min > array[i]){
-
-            min = array[i];
-
-            pos_min = i;
-
-        }
+      cout << "x" << i+1 << ": " << myArrayX[i] << endl;
+      cout << "y" << i+1 << ": " << myArrayY[i] << endl;
 
     }
 
-    return;
-
 }
 
-void stampa(double array[], int len){
+void distanza(float myArrayX[], float myArrayY[], int len, float x0, float y0){
 
-    for(int i = 0; i < len; i++){
+	float dmax = 0;
+	float dmin = INFINITY;
+	float PyMin, PxMin, PyMax, PxMax;
 
-        cout << array[i] << " ";
+	for(int i = 0; i < len; i++){
 
-    }
+		float dist = sqrt(pow(myArrayX[i] - x0, 2) + pow(myArrayY[i] - y0, 2));
 
-    cout << endl;
+
+		if(dist < dmin){
+
+			dmin = dist;
+			PxMin = myArrayX[i];
+			PyMin = myArrayY[i];
+
+		}
+		if(dist > dmax){
+
+			dmax = dist;
+			PxMax = myArrayX[i];
+			PyMax = myArrayY[i];
+
+		}
+
+	}
+
+	float PxMed = (PxMax + PxMin)/2;
+	float PyMed = (PyMax + PyMin)/2;
+
+	cout << "La distanza massima dal punto e': " << dmax << endl;
+	cout << "Raggiunta nei punti: " << endl;
+	cout << "X: " << PxMax <<" Y: " << PyMax << endl;
+	cout << "La distanza minima dal punto e' : " << dmin << endl;
+	cout << "Raggiunta nei punti: " << endl;
+	cout << "X: " << PxMin <<" Y: " << PyMin << endl;
+	cout << "Il punto medio si trova in: " << endl;
+	cout << "X: " << PxMed <<" Y: " << PyMed << endl;
 
 }
-

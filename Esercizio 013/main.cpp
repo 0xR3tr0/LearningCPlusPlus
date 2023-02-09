@@ -1,14 +1,33 @@
 #include "functions.hpp"
 
+using namespace std;
+
 int main(){
 
-    int len, pos_min, pos_max;
+  float x0, y0; 
+  int len;
 
-    double* myArray = crea_array(len);
+  cout << "Inserisci la coordinata x0: ";
+  cin >> x0;
 
-    ricerca_min_max(myArray, len, pos_min, pos_max);
+  cout << "Inserisci la coordinata y0: ";
+  cin >> y0;
 
-    cout << "Il valore minimo corrisponde a: " << myArray[pos_min] << " che si trova nella posizione: " << pos_min + 1 << endl;
-    cout << "Il valore massimo corrisponde a: " << myArray[pos_max] << " che si trova nella posizione: " << pos_max + 1;
+  cout << "Inserisci il numero di punti: ";
+  cin >> len;
+
+  float* myArrayX = new float[len];
+  float* myArrayY = new float[len];
+
+  input_cooordinate(myArrayX, myArrayY, len);
+
+  stampa_array(myArrayX, myArrayY, len);
+
+  distanza(myArrayX, myArrayY, len, x0, y0);
+
+  return 0;
 
 }
+
+  
+
