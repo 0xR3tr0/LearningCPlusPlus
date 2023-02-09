@@ -1,1 +1,0 @@
-calcolo distanza tra due punti (P, P0).

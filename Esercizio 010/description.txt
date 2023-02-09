@@ -1,0 +1,1 @@
+Calcolo dell'n-esimo coefficiente della successione di Fibonacci.

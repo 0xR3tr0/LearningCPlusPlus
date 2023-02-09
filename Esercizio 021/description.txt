@@ -1,0 +1,2 @@
+Programma che esegue le stesse operazione dell'esercizio 019,
+ma invece che utilizzare degli array, utilizza delle liste.

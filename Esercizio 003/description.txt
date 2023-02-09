@@ -1,0 +1,1 @@
+Calcola la velocità e la distanza percorsa da un corpo in un tempo definito dall'utente.

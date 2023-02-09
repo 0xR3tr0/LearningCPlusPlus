@@ -1,0 +1,16 @@
+Il programma definisce e utilizza la struttura più adatta per gestire un elenco di studenti
+che si devono iscrivere ad una seduta di laurea.
+Il generico elemento dell’elenco deve contenere le seguenti informazioni:
+
+- nome dello studente
+- cognome dello studente
+- corso di studi (“INF”, “IND”, “CIV”)
+- media dei voti riportati
+- anno di corso
+
+Il programma prevede inizialmente la lettura dell’elenco con tutti i dati per un numero N di
+studenti specificato dall’utente. 
+Una volta inserito l’elenco, il programma richieda in ingresso la denominazione di un corso di studi 
+ed un valore soglia per la media e conta quanti studenti nell’elenco sono iscritti al corso di studio indicato 
+ed hanno una media dei voti riportati superiore alla soglia fornita.
+Stampa infine i risultati ottenuti.

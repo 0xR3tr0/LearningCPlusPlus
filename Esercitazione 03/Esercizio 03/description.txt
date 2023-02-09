@@ -1,2 +1,0 @@
-Dato un array di N elementi determina la media tra i valori inseriti e la quantità di valori positivi presenti
-nell'array.

@@ -1,0 +1,31 @@
+Un programma che definisce e utilizza la struttura più adatta per gestire un elenco di voli,
+in cui il generico elemento deve contenere le seguenti informazioni:
+
+- città di partenza
+- città di arrivo
+- compagnia aerea
+- numero di passeggeri
+
+Il programma prevedere inizialmente la lettura dell’elenco con tutti i dati per un numero N di voli specificato dall’utente.
+Successivamente, il programma preveda la lettura di un nuovo volo V
+e cerchi nell’elenco originario tutti i voli aventi la stessa origine e la stessa destinazione,
+estraendoli dall’elenco originario ed inserendoli in un nuovo elenco,
+che andrà poi ordinato per numero di passeggeri crescente.
+Al termine, inserisce nel nuovo elenco anche il volo V,
+facendo attenzione a non modificare l’ordinamento dell’elenco. 
+Stampa infine il nuovo elenco ottenuto.
+
+Versione 2
+
+Modificato il programma in modo da avere una seconda struttura per la gestione dei voli costituita dai seguenti campi:
+
+- aeroporto di partenza
+- aeroporto di arrivo
+- compagnia aerea
+- numero di passeggeri
+
+dove un aeroporto è a sua volta una struttura costruita dalle seguenti informazioni:
+
+- nome
+- città
+- nazione

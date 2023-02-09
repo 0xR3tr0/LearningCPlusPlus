@@ -1,0 +1,6 @@
+Calcolo dell'area o il perimetro delle seguenti figure piane:
+
+-Quadrato
+-Triangolo
+-Rettangolo
+-Cerchio (Circonferenza nel caso del cerchio)
