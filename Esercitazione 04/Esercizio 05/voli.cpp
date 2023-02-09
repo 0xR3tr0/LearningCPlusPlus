@@ -103,7 +103,7 @@ void ricerca(Voli array1[], Voli array2[], int n, int &cont){
 
     for(i = 0; i < n; i++){
 
-        if(citta_partenza == array1[i].partenza.citta && citta_arrivo == array1[i].arrivo.citta &&){
+        if(citta_partenza == array1[i].partenza.citta && citta_arrivo == array1[i].arrivo.citta){
 
             array2[cont].partenza.citta = array1[i].partenza.citta;
             array2[cont].partenza.nome = array1[i].partenza.nome;
