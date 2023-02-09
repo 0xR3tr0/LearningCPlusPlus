@@ -13,4 +13,4 @@ Lista degli esercizi:
 - Esercizio 009: Calcolo dell'n-esimo coefficiente della successione di Fibonacci.
 - Esercizio 010: Calcola se il numero inserito è primo.
 - Esercizio 011: Fornisce il valore minimo e il valore massimo in un array di double.
-
+- Gli altri li trovate nelle cartelle dei rispettivi esercizi.
