@@ -4,12 +4,9 @@ int main(){
 
     int n;
 
-    myList* lista_voli = 0;
-    myList* new_lista_voli = 0;
+    myList* lista_voli = inizializzazione(n);
 
-    inizializzazione(lista_voli, n);
-
-    ricerca(new_lista_voli, lista_voli, n);
+    myList* new_lista_voli = ricerca(lista_voli);
 
     stampa(new_lista_voli);
 

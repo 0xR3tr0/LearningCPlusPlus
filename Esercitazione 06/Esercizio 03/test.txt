@@ -21,4 +21,14 @@ Bergamo
 Orio
 Italia
 Alitalia
-60
+120
+Milano
+Linate
+Italia
+Napoli
+Capodichino
+Italia
+Alitalia
+300
+Napoli
+Bergamo

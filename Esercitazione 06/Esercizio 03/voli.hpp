@@ -23,11 +23,11 @@ struct myList{
 
   volo value;
 
-  myList *next;
+  myList *next = NULL;
 
 };
 
-myList* allocazione(myList* lista, int &n);
+myList* allocazione(myList* lista, volo n);
 void stampa(myList* lista);
-void inizializzazione(myList* lista, int n);
-void ricerca(myList* lista1, myList* lista2, int n);
+myList* inizializzazione(int n);
+myList* ricerca(myList* lista1);

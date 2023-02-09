@@ -16,7 +16,15 @@ void stampa(myList* lista){
 
     while(lista){
 
+        cout << "--------------------------------------" << endl;
         cout << "Citta' aereoporto partenza: " << lista-> value.partenza.citta << endl;
+        cout << "Nome aereoporto partenza: " << lista-> value.partenza.nome << endl;
+        cout << "Nazione aereoporto partenza: " << lista-> value.partenza.nazione << endl;
+        cout << "Citta' aereoporto arrivo: " << lista-> value.arrivo.citta << endl;
+        cout << "Nome aereoporto arrivo: " << lista-> value.arrivo.nome << endl;
+        cout << "Nazione aereoporto arrivo: " << lista-> value.arrivo.nazione << endl;
+        cout << "Compagnia aerea: " << lista-> value.compagnia << endl;
+        cout << "Numero passeggeri: " << lista-> value.passeggeri << endl;
 
         lista = lista-> next;
 
@@ -24,7 +32,9 @@ void stampa(myList* lista){
 
 }
 
-void inizializzazione(myList* lista, int n){
+myList* inizializzazione(int n){
+
+    myList* lista = new myList;
 
     volo tmp_volo; //creazione di una struct temporanea 
 
@@ -64,50 +74,41 @@ void inizializzazione(myList* lista, int n){
 
     }
 
-    return;
+    return lista;
 
 }
 
-void ricerca(myList* lista1, myList* lista2, int n){
+myList* ricerca(myList* lista1){
+
+    int primo_ele = 1;
+
+    myList* lista2 = new myList;
 
     volo tmp_volo;
 
     cout << "Inserire la citta' di partenza del volo: ";
     cin >> tmp_volo.partenza.citta;
 
-    cout << "Inserire il nome dell'aeroporto di partenza: ";
-    cin >> tmp_volo.partenza.nome;
-
-    cout << "Inserire la nazione dell'aeroporto di partenza: ";
-    cin >> tmp_volo.partenza.nazione;
-
     cout << "Inserire la citta' di arrivo del volo: ";
     cin >> tmp_volo.arrivo.citta;
 
-    cout << "Inserire il nome dell'aeroporto di arrivo: ";
-    cin >> tmp_volo.arrivo.nome;
+    while(lista1){
 
-    cout << "Inserire la nazione dell'aeroporto di arrivo: ";
-    cin >> tmp_volo.arrivo.nazione;
+        if(tmp_volo.partenza.citta == lista1 -> value.partenza.citta && tmp_volo.arrivo.citta == lista1 -> value.arrivo.citta){
 
-    cout << "Inserire la compagnia aerea del volo: ";
-    cin >> tmp_volo.compagnia;
+            if(primo_ele == 1){
 
-    cout << "Inserirei il numero di passeggeri del volo: ";
-    cin >> tmp_volo.passeggeri;
+                lista2 -> value = lista1 -> value;
+                primo_ele = 0;
 
-    lista2 = allocazione(lista2, tmp_volo);
-
-    for(int i = 0; i < n; i++){
-
-        if(lista2-> value.partenza.citta == lista1 -> value.partenza.citta && lista2-> value.arrivo.citta == lista1 -> value.arrivo.citta){
-
-            lista2 = allocazione(lista2, lista1->value);
+            }else{lista2 = allocazione(lista2, lista1-> value);}
 
         }
 
+        lista1 = lista1 -> next;
+
     }
 
-    return;
+    return lista2;
 
 }
