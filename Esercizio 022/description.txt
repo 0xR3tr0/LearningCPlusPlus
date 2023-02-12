@@ -1,0 +1,1 @@
+Uguale all'esercizio 20 ma con l'implementazione delle classi.

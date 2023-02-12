@@ -1,0 +1,4 @@
+Rocco, Business, 1738.57
+Pierpaolo, Family, 576.89
+Andrea, Enterprise, 1254.67
+Francesco, Business, 2489.38

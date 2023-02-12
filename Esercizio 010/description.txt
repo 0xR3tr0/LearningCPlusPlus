@@ -1,1 +1,0 @@
-Calcola se il numero inserito è primo.
