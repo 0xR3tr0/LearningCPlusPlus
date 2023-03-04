@@ -1,1 +1,1 @@
-Uguale agli esercizi 19/20 ma con l'implementazione delle classi.
+Uguale agli esercizi 19-20 ma con l'implementazione delle classi.
